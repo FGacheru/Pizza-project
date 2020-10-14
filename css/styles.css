@@ -4,6 +4,20 @@ body{
     background-size: cover;
 }
 
-.nav{
-    position: fixed;
+.navbar{
+    /* position: fixed; */
+    padding: 20px 10px;
+    background-color: darkslategray;
+    
+}
+a{
+    padding: 0px 20px;
+   
+}
+nav{
+    padding: 0px 400px;
+   
+}
+#index{
+    font-weight: bolder;
 }

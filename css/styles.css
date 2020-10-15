@@ -2,7 +2,7 @@ body{
     text-align: center;
 }
 .home{
-    background-image: url(../images/bg8.jpg);
+    background-image: url(../images/bg10.jpg);
     background-size: cover;
     background-attachment: fixed;  
     width: 100%;
@@ -31,5 +31,13 @@ nav{
     font-weight: bolder;
 }
 #shop{
-    text-align: center;
+    color: wheat;
+    font-weight: bolder;
+}
+#contacts{
+    background-image: url(../images/contacts.jpg);
+    height: 400px;
+}
+#img{
+    float: left;
 }

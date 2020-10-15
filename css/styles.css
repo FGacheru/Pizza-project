@@ -41,3 +41,11 @@ nav{
 #img{
     float: left;
 }
+.col-6{
+    border: 1px solid blue;
+    background-color: blue;
+    opacity: 0.7;
+}
+#about{
+    background-color: transparent;
+}

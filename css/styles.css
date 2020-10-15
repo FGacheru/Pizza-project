@@ -1,11 +1,20 @@
 body{
-    background-image: url(../images/background1.jpg);
-    background-repeat: no-repeat;
+    text-align: center;
+}
+.home{
+    background-image: url(../images/bg8.jpg);
     background-size: cover;
+    background-attachment: fixed;  
+    width: 100%;
+    height: 500px;  
+    /* background-position-x: center; 
+    background-position-y: 0;    */
+
+    /* height: 400vh; */
 }
 
 .navbar{
-    /* position: fixed; */
+    position: fixed;
     padding: 20px 10px;
     background-color: darkslategray;
     
@@ -20,4 +29,7 @@ nav{
 }
 #index{
     font-weight: bolder;
+}
+#shop{
+    text-align: center;
 }

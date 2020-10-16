@@ -49,3 +49,9 @@ nav{
 #about{
     background-color: transparent;
 }
+#order{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0px 250px 0px 250px;
+    color: wheat;
+}

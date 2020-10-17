@@ -79,35 +79,30 @@ $(document).ready(function(){
 
 
 
-    // else if(type === cheese && size === large && crust === St.Louis){
-    //     return (ksh1000)
-    //     }else if(type === cheese && size === medium && crust === stLouis){
-    //         return(ksh800)
-    //     }else if(type === cheese && size === small && crust === stLouis){
-    //         return(ksh600)
-    //     }else if(type === cheese && size === large && crust === neapolitan){
-    //         return(ksh950)
-    //     }else if(type === cheese && size === medium && crust === neapolitan){
-    //         return(ksh750)
-    //     }else if(type === cheese && size === small && crust === neapolitan){
-    //         return(ksh550)
-    //     }else if(type === cheese && size === large && crust === newYork){
-    //         return(ksh)
-    //     }else if(type === cheese && size === medium && crust === newYork){
-    //         return(ksh)
-    //     }else if(type === cheese && size === small && crust === newYork){
-    //         return(ksh)
-    //     }else if(type === cheese && size === large && crust === stuffedCrust){
-    //         return(ksh)
-    //     }else if(type === cheese && size === medium && crust === stuffedCrust){
-    //         return(ksh)
-    //     }else if(type === cheese && size === small && crust === stuffedCrust){
-    //         return(ksh)
-    //     }
+    else if(type === meat && size === large && crust === St.Louis){
+        return (ksh1000)
+        }else if(type === meat && size === medium && crust === stLouis){
+            return(ksh800)
+        }else if(type === meat && size === small && crust === stLouis){
+            return(ksh600)
+        }else if(type === meat && size === large && crust === neapolitan){
+            return(ksh950)
+        }else if(type === meat && size === medium && crust === neapolitan){
+            return(ksh750)
+        }else if(type === meat && size === small && crust === neapolitan){
+            return(ksh550)
+        }else if(type === meat && size === large && crust === newYork){
+            return(ksh)
+        }else if(type === meat && size === medium && crust === newYork){
+            return(ksh)
+        }else if(type === meat && size === small && crust === newYork){
+            return(ksh)
+        }else if(type === meat && size === large && crust === stuffedCrust){
+            return(ksh)
+        }else if(type === meat && size === medium && crust === stuffedCrust){
+            return(ksh)
+        }else if(type === meat && size === small && crust === stuffedCrust){
+            return(ksh)
+        }
     
-    // else if(type === veggie && size === large && crust === stLouis && topping === extraCheese){
-    //     return(ksh900)
-    // }else if(type === veggie && size === medium && crust === stLouis && topping === extraCheese){
-
-    // }
 });

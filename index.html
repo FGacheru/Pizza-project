@@ -78,30 +78,17 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
-                        <div class="card" style="width:400px">
-                            <div class="col-md-3">
-                                <img class="card-img-top" src="./images/crispy.jpg" alt="Card image" style="width:300px"
+                        <!-- <div style="width:400px"> -->
+                            <div class="col-md-4">
+                                <img src="./images/crispy.jpg" alt="" style="width:350px"
                                     height="300px">
-                                <div class="card-body"></div>
-                                <p class="card-text"> Chicken flavor</p>
+                                <!-- <div class="card-body"></div> -->
+                                <!-- <p class="card-text"> Chicken flavor</p> -->
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!-- <div class="col-md-4">
                                 <img src="./images/crispy.jpg" alt="" width="350px" height="300px">
                             </div> -->
-                        <div class="col-md-3">
-                            <img src="./images/staffed.jpg" alt="" width="300px" height="300px">
-                        </div>
-                        <div class="col-md-3">
-                            <img src="./images/gluten.jpeg" alt="" width="350px" height="300px">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="./images/crispy.jpg" alt="" width="350px" height="300px">
-                        </div>
                         <div class="col-md-4">
                             <img src="./images/staffed.jpg" alt="" width="300px" height="300px">
                         </div>
@@ -113,13 +100,26 @@
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="./images/crispy.jpg" alt="" width="350px" height="300px">
+                            <img src="./images/img1.jpg" alt="" width="350px" height="300px">
                         </div>
                         <div class="col-md-4">
-                            <img src="./images/staffed.jpg" alt="" width="300px" height="300px">
+                            <img src="./images/img2.jpg" alt="" width="300px" height="300px">
                         </div>
                         <div class="col-md-4">
-                            <img src="./images/gluten.jpeg" alt="" width="350px" height="300px">
+                            <img src="./images/img3.jpg" alt="" width="350px" height="300px">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./images/img4.jpg" alt="" width="350px" height="300px">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./images/img5.jpg" alt="" width="300px" height="300px">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./images/img6.jpg" alt="" width="350px" height="300px">
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,8 @@
             <form id="proceed">
                 <div class="form-group" id="types">
                     <label for="sel1">Select type here!</label>
-                    <select class="form-control" id="">
+                    <select class="form-control" id="" required>
+                        <option value="">Fill your type here!</option>
                         <option value="cheese">Cheese</option>
                         <option value="veggie">Veggie</option>
                         <option value="meat">Meat</option>
@@ -143,7 +144,8 @@
 
                 <div class="form-group" id="size">
                     <label for="sel1">Select size here!</label>
-                    <select class="form-control" id="">
+                    <select class="form-control" id="" required>
+                        <option value="">Enter size here.</option>
                         <option value="large">Large</option>
                         <option value="medium">Medium</option>
                         <option value="small">Small</option>
@@ -152,7 +154,8 @@
 
                 <div class="form-group" id="crust">
                     <label for="sel1">Select your preferred crust!</label>
-                    <select class="form-control" id="">
+                    <select class="form-control" id="" required>
+                        <option value="">Add a crust here.</option>
                         <option value="stLouis">St.Louis</option>
                         <option value="neapolitan">Neapolitan.</option>
                         <option value="newYork">New York.</option>
@@ -160,7 +163,7 @@
 
                     </select>
                 </div>
-                <div class="form-group" id="number">
+                <!-- <div class="form-group" id="number">
                     <label for="sel1">Select number of pizzas!</label>
                     <select class="form-control" id="">
                         <option value="1">1.</option>
@@ -175,22 +178,22 @@
                         <option value="10">10.</option>
 
                     </select>
-                </div>
+                </div> -->
                 <div id="toping">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="extraCheese">
+                            value="extraCheese" required>
                         <label class="form-check-label" for="inlineRadio1">Extra cheese
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="blackOlives">
+                            value="blackOlives" required>
                         <label class="form-check-label" for="inlineRadio2">Black olives</label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="greenPeppers">
+                            value="greenPeppers" required>
                         <label class="form-check-label" for="inlineRadio3">Green peppers</label>
                     </div>
                 </div>
@@ -202,6 +205,33 @@
                 <!-- <select class="form-control" id="sel1"> -->
         </div>
         </form>
+        <br><br>
+        <table class="table table-sm  pizzatable">
+            <thead>
+                <tr>
+                    <th scope="col" id="row">Name</th>
+                    <th scope="col" id="row">Type</th>
+                    <th scope="col" id="row">Size</th>
+                    <th scope="col" id="row">Crust</th>
+                    <th scope="col" id="row">Topping</th>
+                    <th scope="col" id="row">Total</th>
+                </tr>
+            </thead>
+            <tbody id="ordersmade">
+                <tr>
+                    <td id="pizzatype"></td>
+                    <td id="pizzaname"></td>
+                    <td id="pizzasize"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatopping"></td>
+                    <td id="totals"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="pizzatotal"></p>
+        <p id="totalbill"></p>
+        <p id="addedprice"></p>
+        <p id="finallmessage"></p>
     </div>
     <br><br>
 

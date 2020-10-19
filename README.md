@@ -1,11 +1,11 @@
-<!-- # Pizza cafe
+# Pizza cafe
 #### pizza-cafe is about online Pizzas order.It was created on 18/10/2020.
 ## Author
 By  Francis Gacheru.
 ## Description of Pizza cafe
 Pizza cafe is about all about ordering Pizzas of your choice regardless of the flavour,size,crust and topping. There is are also deliveries but at a cost.
  
-## project Set up Instructions
+<!-- ## project Set up Instructions
 * Ctrl + alt + t to open the terminal
 * now git clone https://github.com/FGacheru/Pizza-project
 * cd portfolio

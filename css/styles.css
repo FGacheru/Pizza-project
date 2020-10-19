@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .home{
     background-image: url(../images/bg10.jpg);

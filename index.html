@@ -128,130 +128,114 @@
     </div>
     <br><br>
     <div id="order">
+        <div class="row">
+        <div class="col-md-6">
         <div id="orders">
             <form class="col-md-8 text-center" id="proceed">
                 <label>Pick your pizza Flavour:</label>
-                <select class="custom-select custom-select-md mb-3 flavour" id="ytype" required>
+                <select class="custom-select custom-select-md mb-3 flavour" name="ytype" id="ytype" required>
                     <option value=""></option>
                     <option value="cheese">Cheese/option>
                     <option value="veggie">Veggie</option>
                     <option value="meat">Meat</option>
                 </select>
                 <label>Chose your preferred Size:</label>
-                <select class="custom-select custom-select-md mb-3" id="size" required>
+                <select class="custom-select custom-select-md mb-3" name="size" id="size" required>
                     <option value=""></option>
-                    <option value="large">Large</option>                    
+                    <option value="large">Large</option>
                     <option value="medium">Medium</option>
                     <option value="small">Small</option>
-                    
+
                 </select>
                 <label for="crust">Choose your favorite Crust:</label>
-                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                <select class="custom-select custom-select-md mb-3" name="crust" id="crust" required>
                     <option value=""></option>
-                    <option value="stLouis">St.Louis</option>
+                    <option value="st_louis">St.Louis</option>
                     <option value="neapolitan">Neapolitan</option>
-                    <option value="newYork">New York</option>
-                    <option value="stuffedCrust">Stuffed-Crust</option>
+                    <option value="new_york">New York</option>
+                    <option value="stuffed_crust">Stuffed-Crust</option>
                 </select>
                 <label>Select Your favourite Topping</label>
-                <select class="custom-select custom-select-md mb-3" id="topping" required>
+                <select class="custom-select custom-select-md mb-3" name="topping" id="topping" required>
                     <option value=""></option>
-                    <option value="extraCheese">Extra Cheese</option>
-                    <option value="blackOlives">Black Olives</option>
-                    <option value="greenPeppers">Green Peppers</option>
+                    <option value="extra_cheese">Extra Cheese</option>
+                    <option value="black_olives">Black Olives</option>
+                    <option value="green_pepper">Green Peppers</option>
                 </select>
                 <button type="submit" class="btn btn-success">
-                    Checkout
+                    PROCEED
                 </button>
             </form>
-
-
-
-            <!-- <form id="proceed">
-                <div class="form-group" id="ytypes">
-                    <label for="sel1">Select type here!</label>
-                    <select class="form-control" required>
-                        <option value="">Fill your type here!</option>
-                        <option value="cheese">Cheese</option>
-                        <option value="veggie">Veggie</option>
-                        <option value="meat">Meat</option>
-                    </select>
-                </div>
-
-
-                <div class="form-group" id="size">
-                    <label for="sel1">Select size here!</label>
-                    <select class="form-control" required>
-                        <option value="">Enter size here.</option>
-                        <option value="large">Large</option>
-                        <option value="medium">Medium</option>
-                        <option value="small">Small</option>
-                    </select>
-                </div>
-
-                <div class="form-group" id="crust">
-                    <label for="sel1">Select your preferred crust!</label>
-                    <select class="form-control" required>
-                        <option value="">Add a crust here.</option>
-                        <option value="stLouis">St.Louis</option>
-                        <option value="neapolitan">Neapolitan.</option>
-                        <option value="newYork">New York.</option>
-                        <option value="stuffedCrust">Stuffed-Crust.</option>
-
-                    </select>
-                </div>
-                <div id="toping">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="extraCheese" required>
-                        <label class="form-check-label" for="inlineRadio1">Extra cheese
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="blackOlives" required>
-                        <label class="form-check-label" for="inlineRadio2">Black olives</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="greenPeppers" required>
-                        <label class="form-check-label" for="inlineRadio3">Green peppers</label>
-                    </div>
-                </div>
-                <label>
-                    <button type="submit" class="btn btn-success">PROCEED</button>
-                </label>
-                <div id="myOrder"></div>
-            </form> -->
         </div>
+    </div>
 
         <br><br>
-        <table class="table table-sm  pizzatable">
-            <thead>
-                <tr>
-                    <th scope="col" id="row">Name</th>
-                    <th scope="col" id="row">Type</th>
-                    <th scope="col" id="row">Size</th>
-                    <th scope="col" id="row">Crust</th>
-                    <th scope="col" id="row">Topping</th>
-                    <th scope="col" id="row">Total</th>
-                </tr>
-            </thead>
-            <tbody id="ordersmade">
-                <tr>
-                    <td id="pizzatype"></td>
-                    <td id="pizzaname"></td>
-                    <td id="pizzasize"></td>
-                    <td id="pizzacrust"></td>
-                    <td id="pizzatopping"></td>
-                    <td id="totals"></td>
-                </tr>
-            </tbody>
-        </table>
-        <p id="pizzatotal"></p>
-        <p id="totalbill"></p>
-        <p id="addedprice"></p>
-        <p id="finallmessage"></p>
+    <div class="col-md-6">
+        <div id="orders-div">
+            <h3>Your Orders</h3>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Topping</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-summary"></tbody>
+            </table>
+
+            <p class="delivery-cost hidden">
+                Delivery: Ksh. <span id="delivery-amount"></span>
+            </p>
+            <p class="finalAmount hidden">
+                Total: Ksh. <span id="finalAmount"></span>
+            </p>
+            <br /><br />
+            <button class="btn btn-primary hidden" id="proceed">Proceed</button>
+
+        </div>
+        <div class="checkout-options hidden">
+            <h3>Checkout Form</h3>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Delivery Option</label>
+                    <select class="form-control" id="delivery-option" name="delivery-option" required>
+                        <option value="">...</option>
+                        <option value="deliver">Deliver</option>
+                        <option value="collect">Collect</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="location hidden">
+            <form id="location-form">
+                <h3>Enter Location</h3>
+                <div class="form-group">
+                    <label>Estate</label>
+                    <input type="text" name="estate" class="form-control" id="estate" placeholder="Enter Your Name"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">House Number</label>
+                    <input type="text" name="house-number" class="form-control" id="house-number"
+                        placeholder="Enter Your Name" required />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
     </div>
     <br><br>
 
@@ -271,7 +255,7 @@
 
 
 
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>

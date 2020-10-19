@@ -5,7 +5,7 @@ By  Francis Gacheru.
 ## Description of Pizza cafe
 Pizza cafe is about all about ordering Pizzas of your choice regardless of the flavour,size,crust and topping. There is are also deliveries but at a cost.
  
-<!-- ## project Set up Instructions
+## project Set up Instructions
 * Ctrl + alt + t to open the terminal
 * now git clone https://github.com/FGacheru/Pizza-project
 * cd portfolio
@@ -21,4 +21,4 @@ Pizza cafe is about all about ordering Pizzas of your choice regardless of the f
 I would like to give credit to my Technical mentor for the guidance he gave me towards the development of this web.
 ### License
 * Licensed under the MIT license
-Copyright (c) [2020] (Francis Gacheru) -->
+Copyright (c) [2020] (Francis Gacheru)

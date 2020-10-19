@@ -1,24 +1,24 @@
 const prices = {
   flavour: {
-    veggie: 10,
-    meat: 10,
-    cheese: 10,
+    veggie: 800,
+    meat: 750,
+    cheese: 700,
   },
   size: {
-    large: 10,
-    medium: 10,
-    small: 10,
+    large: 200,
+    medium: 150,
+    small: 100,
   },
   crust: {
-    new_york: 10,
-    st_louis: 10,
-    neapolitan: 10,
-    stuffed_crust: 10,
+    new_york: 100,
+    st_louis: 100,
+    neapolitan: 70,
+    stuffed_crust: 150,
   },
   topping: {
-    extra_cheese: 10,
-    black_olives: 10,
-    green_pepper: 10,
+    extra_cheese: 100,
+    black_olives: 120,
+    green_pepper: 150,
   },
 };
 const nameMapper = {
@@ -44,7 +44,7 @@ $(document).ready(function () {
     this.size = size;
     this.price = price;
   }
-  var totalAmount = 0;
+  // var totalAmount = 0;
   var newOrder = [];
 
   $("#proceed").submit(function (event) {
@@ -71,12 +71,14 @@ $(document).ready(function () {
    </tr>`;
     $("#order-summary").append(data);
     totalAmount = newOrder.reduce((pv, cv) => pv + cv.price, 0);
+    console.log(totalAmount)
     $("#finalAmount").empty();
     $("#finalAmount").append(totalAmount);
     $(".finalAmount").show();
   });
   $("#proceed").click(function () {
     $(".checkout-options").show();
+    $("#checkout-form").show();
   });
 
   $("#checkout-form").submit(function (event) {
@@ -87,7 +89,7 @@ $(document).ready(function () {
     $("#name").val("");
     $("#delivery-option").val("");
     $(".checkout-options").hide();
-    $("#proceed").hide();
+    // $("#proceed").hide();
     $("#finalAmount").empty();
     if (deliveryOption === "deliver") {
       $(".location").show();
@@ -117,7 +119,7 @@ $(document).ready(function () {
     var houseNumberEntered = $("#house-number").val();
     estate = estateEntered;
     houseNumber = houseNumberEntered;
-    $("#proceed").hide();
+    $("#proceed").show();
     $(".location").hide();
     $("#finalAmount").empty();
     $("#finalAmount").append(totalAmount);

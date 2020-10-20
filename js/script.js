@@ -60,6 +60,12 @@ $(document).ready(function () {
       prices.topping[topping] +
       prices.size[size];
     const newPizza = new Pizza(flavour, crust, topping, size, pizzaPrice);
+    $("#ytype").val("")
+    $("#crust").val("")
+    $("#topping").val("")
+    $("#size").val("")
+
+
     newOrder.push(newPizza);
     const data = `
    <tr>
